@@ -1,0 +1,112 @@
+:root {
+    --leaf-green: #799351;  /* Main color */
+    --grape-purple: #5D1049;
+    --vivid-orange: #FF7800;
+    --persimmon-red: #D9534F;
+    --golden-yellow: #F4A900;
+    --soft-beige: #F6EEC9;
+    --charcoal-black: #2E2E2E;
+    --ash-grey: #CBD4C2;
+    --cerulean: #247BA0;
+    --midnight-green: #003844;
+    --font-color: #EE4E4E;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--soft-beige);
+    overflow: hidden;
+}
+
+.homepage-header{
+    background-color: var(--leaf-green);
+    height: 10%;
+    
+}
+
+.homepage-main {
+    display: flex;
+    margin: 5% 15% 10% 25%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6rem;
+}
+
+.homepage-image {
+    height: 22rem;
+    width: 30rem;
+}
+
+.homepage-apresentation {
+
+    height: 350px;
+    width: 1000px;
+
+    font-family: "Montserrat", sans-serif;
+    color: var(--font-color);
+    text-align: justify;    
+}
+
+.homepage-apresentation-title{
+    font-size: 32px;
+}
+
+.homepage-apresentation-subtitle{
+    margin-top: 8px;
+
+    font-size: 24px;
+}
+
+.homepage-apresentation-text{
+    margin-top: 8px;
+    font-size: 20px;
+}
+
+.homepage-footer {
+    position: absolute;
+    bottom: -1rem;
+    
+    padding: 1rem;
+    text-align: center;
+    color: #CBD4C2;
+
+    height: 5%;
+    width: 100%;
+
+    background-color: var(--midnight-green);
+}
+
+
+.button {
+    /* 1️⃣ Positioning & Layout */
+    display: inline-block;
+    position: relative;
+    text-align: center;
+
+    /* 2️⃣ Box Model (Size & Spacing) */
+    width: 150px;
+    height: 50px;
+    padding: 10px 20px;
+    border: 2px solid #000;
+    border-radius: 8px;
+
+    /* 3️⃣ Typography */
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    /* 4️⃣ Visual Styles */
+    color: white;
+    background-color: blue;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+
+    /* 5️⃣ Effects & Transitions */
+    transition: background-color 0.3s ease-in-out;
+}
