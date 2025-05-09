@@ -1,0 +1,143 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    padding: 1em 1.5em;
+
+    background-color: var(--main-color);
+}
+
+.header__container{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5em;
+    align-items: center;
+}
+
+.header__menu-icon {
+    width: 48px;
+    height: 48px;
+    
+    display: inline-block;
+    background-image: url("../src/Menu.svg");
+    background-color: var(--main-color);
+}
+
+.header__menu-modal{
+    display: none;
+    position: absolute;
+    top: 100%;
+
+    width: 60vw;
+    background-color: var(--main-color);
+
+}
+
+.header__title{
+    display: none;
+}
+
+.header__container__checkbox{
+    display: none;
+}
+
+.header__container__checkbox:checked~.header__menu-modal{
+    display: block;
+    left: 0;
+}
+
+
+.header__menu-title, .header__menu-modal__item{
+    padding: 1em 1.5em;
+    font-size: 16px;
+}
+
+.header__menu-modal__item__link{
+    text-decoration: none;
+    color: var(--main-text-color);
+}
+
+.header__menu-title{
+    color: var(--title-color);
+    font-weight: 700;
+}
+
+/* dont show in small screens */
+.header__links-list {
+    display: none;
+}
+
+.header__container__icon>span{
+    display: none;
+}
+
+@media screen and (min-width: 1024px){
+    .header__title {
+        display: block;
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: 500;
+        font-size: 30px;
+    }
+    .header__title strong{
+        font-weight: 700;
+    }
+
+    .header__menu-icon {
+        display: none;
+    }
+
+    .header__links-list {
+        display: flex; 
+    }
+
+    .header__links-list__first_item,
+    .header__links-list__item {
+        padding: 0.5em 2em 0.5em 0.5em;
+
+        text-decoration: none;
+        color:var(--secondary-color);
+        
+    }
+    .header__links-list__item{
+        display: flex;
+        padding:0.5em 2em 0.5em 0.5em;
+    }
+
+    .header__container__favorites{
+        display: none;
+    }
+
+    .header__menu-modal,
+    .header__container__checkbox__tablet{
+        display: none;
+
+        width: auto;
+    }
+
+    .header__container__checkbox__tablet:checked~.header__menu-modal{
+        display: block;
+    }
+}
+
+@media screen and (min-width:1728px) {
+    .header__container__icon__favorite{
+        display: none;
+    }
+
+    .header__container__icon {
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+
+        text-decoration: none;
+        color: var(--tertiary-text-color);
+    }
+
+    .header__container__icon>span{
+        display: block;
+
+    }
+
+
+}
