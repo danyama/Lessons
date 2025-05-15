@@ -20,6 +20,7 @@ body{
     background-color: var(--main-background-color);
     background-repeat: no-repeat;
 
+    color: var(--gray-four);
     font-family: var(--text-font);
     font-weight: 400;
 }

@@ -1,0 +1,43 @@
+.menu {
+    width: 10vw;
+    padding: 2em 0;
+    border-radius: 10px;
+    
+    background-color: var(--gray-two);
+    /* background-color: white; */
+    
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+
+}
+
+.menu__link-list {
+    margin: 4em auto;
+}
+
+.menu__link-list__button {
+    margin: 0.5em;
+
+    border: 1px solid var(--main-green);
+    border-radius: 10px;
+    padding: 0.75em;
+}
+
+.menu__link-list__button > a {
+    text-decoration: none;
+    color: var(--main-green);
+}
+
+.menu__link-list__item {
+    margin: 1.5em 0;
+}
+
+.menu__link-list__item > a {
+    color: var(--gray-five);
+    text-decoration: none;
+}
+
+.menu__icon {
+    margin: 0.5em 0;
+}

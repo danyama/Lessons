@@ -1,0 +1,33 @@
+@import url("./menu.css");
+@import url("./publish.css");
+
+:root{
+    /* colors */
+    --main-green: #81FE88;
+    --secondary-green: #BFFFC3;
+    --tertiary-green: #132E35;
+
+    --gray-one: #01080E;
+    --gray-two: #171D1F;
+    --gray-three: #3E3E3F;
+    --gray-four: #888888;
+    --gray-five: #BCBCBC;
+    --gray-six: #E1E1E1;
+
+    --white: #FFFFFF;
+
+
+    /* text */
+    --main-font: "Prompt", sans-serif;
+}
+
+
+
+body {
+    display: flex;
+    padding: 4em 10em;
+
+    background-color: var(--gray-one);
+    
+    font-family: var(--main-font);
+}
